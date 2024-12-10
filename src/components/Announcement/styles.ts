@@ -3,11 +3,32 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-  padding-top: 15%;
+  padding-top: 8%;
   display: flex;
-  justify-content: space-between;
-  gap: 8rem;
+    flex-direction: column;
+  justify-content: center;
+align-items: center;
+font-size: 2.5rem;
+  gap: 1rem;
   background: rgba(0,0,0,0);
+
+.line{
+  left: 1.125rem;
+  height: 1px;
+  width: calc(100% - 2.25rem);
+  background: linear-gradient(
+    to right,
+    rgba(16, 185, 129, 0) 0%, 
+    rgba(16, 185, 129, 0.9) 50%, 
+    rgba(16, 185, 129, 0) 100%
+  );
+  transition: opacity 500ms;
+}
+
+.link{
+color: #23CD6B;
+}
+
   .hero-text{
     & > p{
       font-size: 1.8rem;

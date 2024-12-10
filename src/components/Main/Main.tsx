@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles"
 import { Container } from "./styles"
 import { Hero } from "../Hero/Hero"
+import { Announcement } from "../Announcement/Announcement"
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Portfolio } from "../Portfolio/Portfolio";
@@ -30,8 +31,7 @@ export function Main() {
                         "zIndex": 1
                     },
                     "detectRetina": true,
-                    "fpsLimit": 60,
-                    "interactivity": {
+                    "fpsLimit": 60, "interactivity": {
                         "events": {
                             "onClick": {
                                 "enable": true,
@@ -248,6 +248,7 @@ export function Main() {
                     }
                 }}
             />
+            <Announcement></Announcement>
             <Hero></Hero>
             <About></About>
             <Portfolio></Portfolio>
